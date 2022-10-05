@@ -1,0 +1,19 @@
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+using namespace std;
+int main()
+{
+	double h1, h2, min1, min2, h3, min3, m;
+	cout <<"Start:";
+	cin>>h1>>min1;
+	cout <<"Finish:";
+	cin>>h2>>min2;
+	min3=((h2*60)+min2)-((h1*60)+min1);
+    if (min3 < 0) min3 += 60 * 24;
+    h3 = min3 / 60;
+    m = min3 % 60;
+    cout << "Result:" << h3 << "  h  " << m << "  min  ";
+	return(0);
+	
+}
